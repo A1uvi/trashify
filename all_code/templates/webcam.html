@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Trashify</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="static/img/favicon.png" rel="icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="{{url_for('index')}}"><span>Trashify</span></a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="{{url_for('index')}}">Home</a></li>
+          <li><a href="{{url_for('webcam')}}" style="color: #fb8332"><b>Webcam</b></a></li>
+          <li><a href="{{url_for('predictionsportfolio')}}">Predictions Portfolio</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="hero" class="d-flex align-items-center">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1>Classifiying with Webcam</h1>
+            <h2>Instructions</h2>
+            <h2>Instructions</h2>
+            <h2>Instructions</h2>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 about-img">
+            <img src="static/img/about-img.svg" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <div class = "container">
+        <p></p>
+        <form action="{{url_for('predictions')}}" id="form1"></form>
+        <div class="camera">
+          <video id="video" width="480" height="360">Video stream not available.</video>
+          <button id="startbutton">Take photo</button>
+      </div>
+      <canvas id="canvas" width="480" height="360"> </canvas>
+      <div class="output">
+          <img id="photo" alt="The screen capture will appear in this box." />
+          <button id="predbutton" type="submit" name="img" form="form1" value="">Classify</button>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  </main>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="static/js/webcam.js"></script>
+
+</body>
+
+</html>

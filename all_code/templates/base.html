@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Trashify</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="static/img/favicon.png" rel="icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+    
+          <div class="logo">
+            <h1 class="text-light"><a href="{{url_for('index')}}"><span>Trashify</span></a></h1>
+          </div>
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a href="{{url_for('index')}}">Home</a></li>
+              <li><a href="{{url_for('webcam')}}" style="color: #fb8332"><b>Webcam</b></a></li>
+              <li><a href="{{url_for('predictionsportfolio')}}">Predictions Portfolio</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+    
+        </div>
+      </header>
+
+  <main id="main">
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Trashify:</h1>
+          <h2>Classifiying our trash to save the planet.</h2>
+          <h2>Here's a link to the <a href="https://github.com/A1uvi/trashify">GitHub repo</a> and the <a href="https://nchacks-1.devpost.com/">hackathon it was created for.</a></h2>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="static/img/hero-img.svg" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+    
+    <section id="team" class="team">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="static/img/team/1.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="member">
+              <img src="static/img/team/2.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="member">
+              <img src="static/img/team/3.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="member">
+              <img src="static/img/team/4.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="section-title" data-aos="fade-up">
+          <p> <br>
+            <b>Trashify is the Solution:</b>
+            <br>It filters out cardboard, glass, metal, paper, and plastic out from
+            general trash to save wildlife in the ocean and on land.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <p><b>How it Works</b></p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Data Preprocessing using Python</a></h4>
+              <p class="description">I did data processing in python by transforming, augmenting and analyzing the 2527 images in my dataset so that all of the values became usable and properly recognized.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Deep Learning using Tensorflow</a></h4>
+              <p class="description">CNN (Convolutional Neural Network) is a deep learning keras algorithm in Python used for image classification. It involved filtering an image through multiple layers, in this case 12, and iterating through the data 100 times to identify patterns.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">User Experience using HTML, CSS, JavaScript</a></h4>
+              <p class="description">HTML provides the structure, CSS adds styling and visual appeal, while JavaScript adds interactivity and dynamic behavior to a website, creating a seamless and engaging user experience. </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Full Stack Framework using Flask</a></h4>
+              <p class="description">Flask allowed me to use python functions in the backend to capture and save images to then classify with my loaded model. It also helped me to connect my HTML to the outputs of the python functions.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
